@@ -1,5 +1,5 @@
 #!/bin/bash
-NAEV="@naev_bin@ -d @source_root@/dat -d @source_root@/artwork -d @build_root@/dat -d @source_root@"
+NAEV="@naev_bin@ -d @source_root@/dat/universes/naev -d @source_root@/dat/engine -d @source_root@/artwork -d @build_root@/dat -d @source_root@"
 
 "@source_root@/meson.sh" compile -C "@build_root@" naev-gmo
 for mo_path in "@build_root@"/po/*.gmo; do
